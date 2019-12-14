@@ -1,4 +1,4 @@
-FROM toshiara/texlive-plus:2019
+FROM toshiara/texlive-plus:2019.3
 
 # Reference: https://hub.docker.com/r/solareenlo/alpine-texlive-ja
 
