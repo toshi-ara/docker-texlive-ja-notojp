@@ -1,7 +1,7 @@
 USERID=toshiara
 NAME=texlive-notojp
 MAINVER=2019
-SUBVER=1
+SUBVER=2
 
 # build
 docker build -t ${USERID}/${NAME} .
