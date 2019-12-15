@@ -1,4 +1,4 @@
-FROM toshiara/texlive-plus:2019.3
+FROM paperist/alpine-texlive-ja
 
 # Reference: https://hub.docker.com/r/solareenlo/alpine-texlive-ja
 
@@ -24,6 +24,10 @@ RUN apk --no-cache add wget && \
          ${FONTURL}/NotoSerifJP-SemiBold.otf && \
     mktexlsr && \
     apk --no-cache del wget
+
+RUN apk --no-cache add curl && \
+    tlmgr update --self && \
+    tlmgr install ccicons newtx siunitx stix
 
 # Mincho, light     (\mcfamily\ltseries)
 # Mincho, medium    (\mcfamily\mdseries)
